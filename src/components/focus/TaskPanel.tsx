@@ -25,7 +25,7 @@ export function TaskPanel({ className }: { className?: string }) {
 
   const submit = () => {
     if (!title.trim()) return;
-    addTask({ title: title.trim(), pomodoros: pomos, priority, due: due || undefined });
+    addTask({ title: title.trim(), pomodoros: pomos, priority, ...(due ? { due } : {}) });
     setTitle("");
     setPomos(1);
     setDue("");
