@@ -73,7 +73,7 @@ function FocusSpace() {
             <StatsPanel />
           </div>
         ) : (
-          <div className="mx-auto grid w-full max-w-[1500px] items-start gap-6 pt-2 lg:grid-cols-[300px_minmax(0,1fr)_320px]">
+          <div className="mx-auto grid w-full max-w-[1500px] items-start gap-6 pt-2 lg:grid-cols-[340px_minmax(0,1fr)_340px]">
             <TaskPanel
               className={cn(
                 "hidden max-h-[70vh] transition-all duration-500 lg:flex",
